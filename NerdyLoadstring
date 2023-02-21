@@ -1,0 +1,59 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Nerds OP Script Hub"})
+OrionLib:MakeNotification({
+	Name = "WSG NAGAS",
+	Content = "Welcome to Nerds Script Hub nagas",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
+local BSS = Window:MakeTab({
+	Name = "Bee Swarm Simulator",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local DH = Window:MakeTab({
+	Name = "DaHood",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local PD = Window:MakeTab({
+	Name = "Pls Donate",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local U = Window:MakeTab({
+	Name = "Universal",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+BSS:AddButton({
+	Name = "Bee Swarm Simulator GUI",
+	Callback = function()
+		loadstring(game:HttpGet('https://s.kometa.pw/kometa.lua'))()
+  	end    
+})
+DH:AddButton({
+	Name = "DaHood SvanHub (OP)",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/svan1lol/svanhub/main/svanhubdahood.lua", true))()
+  	end    
+})
+PD:AddButton({
+	Name = "Pls Donate Autofarm",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm"))()
+  	end    
+})
+U:AddButton({
+	Name = "Anti AFK",
+	Callback = function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/nErDyIsC00L/afk/main/afk")()
+  	end    
+})
+U:AddButton({
+	Name = "Fates OP Admin",
+	Callback = function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/nErDyIsC00L/Fatahh/main/Fatahh")()
+  	end    
+})
+OrionLib:Init()
