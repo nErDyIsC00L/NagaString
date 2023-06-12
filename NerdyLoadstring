@@ -7,7 +7,7 @@ OrionLib:MakeNotification({
 	Time = 15
 })
 local BSS = Window:MakeTab({
-	Name = "Bee Swarm Simulator",
+	Name = "Pet Simuator X",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -27,9 +27,9 @@ local U = Window:MakeTab({
 	PremiumOnly = false
 })
 BSS:AddButton({
-	Name = "Bee Swarm Simulator GUI",
+	Name = "Nuke VS City",
 	Callback = function()
-		loadstring(game:HttpGet('https://s.kometa.pw/kometa.lua'))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader"))()
   	end    
 })
 DH:AddButton({
